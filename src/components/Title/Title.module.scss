@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.header {
+  color: $primary;
+  padding-bottom: 0.2rem;
+  font-size: 2rem;
+}
+
+.underline {
+  background-color: $secondary;
+  height: 1px;
+  width: 160px;
+}

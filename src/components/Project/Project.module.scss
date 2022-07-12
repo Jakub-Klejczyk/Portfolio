@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.wrapper {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  perspective: 800px;
+}
+
+@media screen and (min-width: 860px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.text {
+  background-color: $primary;
+  color: white;
+  padding: 1rem;
+  margin-block: 1rem;
+  font-weight: 300;
+  h3 {
+    padding-bottom: 1rem;
+  }
+  p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+
+ul:before {
+  content: attr(aria-label);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  li {
+    margin-inline: 2rem;
+    line-height: 1.6rem;
+    .icon {
+      padding-left: 0.4rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    width: 46%;
+  }
+  .wrapper {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  ul {
+    width: 46%;
+    padding-top: 1rem;
+  }
+}

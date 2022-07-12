@@ -1,0 +1,20 @@
+@import "../../App.scss";
+
+footer {
+  background-color: $primary;
+  color: white;
+  text-align: center;
+  padding-block: 1rem;
+  font-family: $ff-main;
+  div {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 10vh;
+    margin: 0 auto;
+    padding-block: 0.4rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}

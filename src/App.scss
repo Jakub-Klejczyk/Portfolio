@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+$primary: #265241;
+$secondary: #2f7f3d;
+$tertiary: #6dba8d;
+
+$fw-header: 700;
+$fw-text: 300;
+
+$ff-main: "Montserrat", sans-serif;
+
+section {
+  margin: 4rem 1rem;
+  font-family: $ff-main;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin: 1rem 10vw;
+  }
+}
