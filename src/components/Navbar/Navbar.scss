@@ -3,7 +3,6 @@
 .test {
   display: flex;
   justify-content: space-between;
-  height: 7vh;
 }
 
 .icon {
@@ -11,7 +10,7 @@
   font-size: 2.4rem;
   top: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
   padding: 1rem;
   display: none;
   cursor: pointer;
@@ -26,7 +25,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  color: white;
   height: 7vh;
   list-style: none;
   display: flex;
@@ -38,6 +36,30 @@
   .item {
     font-size: 1.2rem;
     cursor: pointer;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $tertiary;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.wrapper2 {
+  display: none;
+  .item {
+    font-size: 1.2rem;
+    cursor: pointer;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $tertiary;
+        transition: 0.2s;
+      }
+    }
   }
 }
 .logo {
@@ -48,6 +70,10 @@
   width: 4rem;
   height: 4rem;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -55,11 +81,21 @@
     display: block;
   }
   .wrapper {
+    display: none;
+  }
+  .wrapper2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: $ff-main;
+    width: auto;
+
     position: fixed;
     top: 0;
     right: 0;
-    padding: 20vh 0 40vh 0;
-    width: 50vh;
+    padding: 8vh 0 40vh 0;
+    width: 60vw;
     height: 100vh;
     background-color: $primary;
     flex-direction: column;

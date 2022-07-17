@@ -40,6 +40,13 @@
     height: 2.2rem;
     width: fit-content;
     padding-inline: 1rem;
+    &:hover {
+      border: 1px $primary solid;
+      background-color: white;
+
+      color: $primary;
+      transition: 0.2s;
+    }
   }
 }
 p {

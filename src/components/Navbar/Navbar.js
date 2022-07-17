@@ -6,29 +6,46 @@ import img from "../../assets/logo białe svg (1).svg";
 
 const Navbar = () => {
   const [active, setActive] = useState("wrapper");
+  const [active2, setActive2] = useState("wrapper2");
   const navToggle = () => {
-    active === "wrapper"
-      ? setActive("wrapper wrapper__active")
-      : setActive("wrapper");
+    active === "wrapper" && active2 === "wrapper2"
+      ? setActive2("wrapper2 wrapper__active")
+      : setActive2("wrapper2");
   };
   return (
     <>
       <nav className="nav">
-        <img className="logo" src={img} alt="" />
+        <a href="#">
+          <img className="logo" src={img} alt="" />
+        </a>
         <FontAwesomeIcon onClick={navToggle} icon={faBars} className="icon" />
         <div className="test"></div>
         <ul className={active}>
-          <li href="#about" className="item">
-            Start
+          <li className="item">
+            <a href="#">Start</a>
           </li>
-          <li href="#about" className="item">
-            O mnie
+          <li className="item">
+            <a href="#about">O mnie</a>
           </li>
-          <li href="#projects" className="item">
-            Projekty
+          <li className="item">
+            <a href="#projects">Projekty</a>
           </li>
-          <li href="#contact" className="item">
-            Kontakt
+          <li className="item">
+            <a href="#contact">Kontakt</a>
+          </li>
+        </ul>
+        <ul className={active2}>
+          <li className="item">
+            <a href="#">Start</a>
+          </li>
+          <li className="item">
+            <a href="#about">O mnie</a>
+          </li>
+          <li className="item">
+            <a href="#projects">Projekty</a>
+          </li>
+          <li className="item">
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>

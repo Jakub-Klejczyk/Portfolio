@@ -13,6 +13,15 @@ footer {
     width: 10vh;
     margin: 0 auto;
     padding-block: 0.4rem;
+    a {
+      color: white;
+      .icon {
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
   }
   p {
     font-size: 0.8rem;

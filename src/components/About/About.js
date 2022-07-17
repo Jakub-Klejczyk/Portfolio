@@ -11,23 +11,23 @@ import Title from "../Title/Title";
 
 const About = ({ children }) => {
   return (
-    <section>
-      <Title children="O mnie" id="about" />
+    <section id="about">
+      <Title children="O mnie" />
       <div className={styles.wrapper}>
         <div className={styles.text}>
           <h3>Cześć!</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-            necessitatibus quibusdam soluta quidem illum! Voluptas eos aliquam
-            quam totam numquam ad reiciendis eius, hic modi tenetur doloremque
-            cupiditate eveniet commodi? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Cum necessitatibus quibusdam soluta quidem illum!
-            Voluptas eos aliquam quam totam numquam ad reiciendis eius, hic modi
-            tenetur doloremque cupiditate eveniet commodi? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Cum necessitatibus quibusdam
-            soluta quidem illum! Voluptas eos aliquam quam totam numquam ad
-            reiciendis eius, hic modi tenetur doloremque cupiditate eveniet
-            commodi?
+            Nazywam się Jakub Klejczyk. Z programownaiem pierwszy raz zetknąłem
+            się w okolicach szkoły podstawowej, kiedy to z przyjacielem
+            spróbowaliśmy stworzyć swoją własną grę. Jednak dopiero od dwóch lat
+            kodowanie stało się moją codziennością. Od tego czasu systematycznie
+            staram się rozwijać w zakresie technologii front-endowych.
+          </p>
+          <p>
+            Poza tym jestem fanem wspinaczki sportowej, jak i skłkowej. Moje
+            serce skradzione zostało lata temu przez gady, które do dziś
+            hodouje. Uwielbiam również spędzać czas przy dobrej książce,
+            ostatnio najczęciej wybieram literature faktu.
           </p>
         </div>
 

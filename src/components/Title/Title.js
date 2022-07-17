@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Title.module.scss";
+import PropTypes from "prop-types";
 
 const Title = ({ children }) => {
   return (
@@ -8,6 +9,10 @@ const Title = ({ children }) => {
       <div className={styles.underline}></div>
     </>
   );
+};
+
+Title.propTypes = {
+  children: PropTypes.string.isRequired,
 };
 
 export default Title;

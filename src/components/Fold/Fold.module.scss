@@ -9,23 +9,29 @@
   color: white;
   font-family: $ff-main;
 
-  button {
-    padding: 0.6rem 1.2rem;
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    font-family: $ff-main;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border: 1px white solid;
-    cursor: pointer;
-  }
-
   .container {
     display: flex;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    animation: appear 1s ease-in;
+
+    a {
+      padding: 0.6rem 1.2rem;
+      font-size: 1.2rem;
+      font-family: $ff-main;
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      border: 1px white solid;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        background-color: white;
+        color: $primary;
+        transition: 0.2s;
+      }
+    }
 
     .item {
       .hero {
@@ -43,6 +49,7 @@
   h1 {
     font-weight: 700;
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -68,5 +75,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

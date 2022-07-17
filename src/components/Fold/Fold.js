@@ -9,7 +9,7 @@ export const Fold = () => {
         <div>
           <h3>Jakub Klejczyk,</h3>
           <h1>Front-end Developer</h1>
-          <button>Projekty</button>
+          <a href="#projects">Projekty</a>
         </div>
         <div className={styles.item}>
           <img className={styles.hero} src={img} alt="" />

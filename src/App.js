@@ -3,7 +3,7 @@ import Fold from "./components/Fold/Fold";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
-import Form from "./components/Form/Form";
+import TextForm from "./components/Form/TextForm";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <About />
       <Project />
-      <Form />
+      <TextForm />
       <Footer />
     </div>
   );
